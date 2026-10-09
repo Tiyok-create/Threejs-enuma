@@ -1,0 +1,1 @@
+Folder ini disediakan untuk aset tambahan jika nanti dibutuhkan. Model mobil demo dibuat langsung dengan geometri Three.js di main.js, jadi tidak perlu file GLB tambahan.

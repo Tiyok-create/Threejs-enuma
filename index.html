@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070912">
+  <title>NEON VELOCITY — Futuristic Sportscar</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="loading-inner">
+      <div class="logo-mark">NV<span> / 01</span></div>
+      <p>INITIALIZING VEHICLE SYSTEMS</p>
+      <div class="loading-track"><div id="loading-progress"></div></div>
+    </div>
+  </div>
+
+  <main id="app">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Neon Velocity home">
+        <span class="brand-symbol">N</span>
+        <span><b>NEON VELOCITY</b><small>CONCEPT SERIES / 2049</small></span>
+      </a>
+      <div class="top-status"><span class="status-light"></span> SYSTEM ONLINE</div>
+    </header>
+
+    <section class="hero-copy">
+      <p class="eyebrow">NEXT-GEN ELECTRIC PERFORMANCE</p>
+      <h1>BUILT FOR<br><em>THE UNKNOWN.</em></h1>
+      <p class="description">Kenali konsep mobil sport futuristik dengan bodi aerodinamis, lampu neon, roda berputar, dan showroom 3D interaktif.</p>
+      <div class="hero-actions">
+        <button id="drive-button" class="button-primary">ACTIVATE DRIVE <span>↗</span></button>
+        <button id="lights-button" class="button-secondary">LIGHTS: ON</button>
+      </div>
+    </section>
+
+    <section class="vehicle-card">
+      <div class="card-top"><span>VEHICLE PROFILE</span><span class="live-pill">LIVE</span></div>
+      <h2>NV-X <span>01</span></h2>
+      <p>Electric Hyper Coupe</p>
+      <div class="spec-grid">
+        <div><small>POWER</small><strong>980 <i>HP</i></strong></div>
+        <div><small>0–100 KM/H</small><strong>2.1 <i>SEC</i></strong></div>
+        <div><small>DRIVE</small><strong>AWD</strong></div>
+        <div><small>ENERGY</small><strong>100 <i>%</i></strong></div>
+      </div>
+      <div class="energy-label"><span>ENERGY CORE</span><span id="energy-value">100%</span></div>
+      <div class="energy-track"><div id="energy-bar"></div></div>
+    </section>
+
+    <footer class="footer">
+      <div class="hint"><span class="mouse-icon">↔</span> DRAG TO ROTATE <span class="hint-separator">/</span> SCROLL TO ZOOM</div>
+      <div class="footer-right"><span id="mode-label">SHOWROOM MODE</span><span class="footer-dot"></span> THREE.JS EXPERIENCE</div>
+    </footer>
+
+    <div id="toast" role="status">VEHICLE SYSTEM READY</div>
+  </main>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
